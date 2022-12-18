@@ -1,0 +1,6 @@
+services:
+  clash:
+    image: haishanh/yacd
+    container_name: yacd
+    ports:
+      - 1234:80

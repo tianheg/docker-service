@@ -1,0 +1,7 @@
+services:
+  darkhttpd:
+    image: tianheg/darkhttpd
+    volumes:
+      - /mnt/disk/repo/exercise:/var/www/htdocs:ro
+    ports:
+      - 1237:80

@@ -1,0 +1,9 @@
+services:
+  web:
+    image: nginx:stable
+    container_name: markup_convert
+    restart: unless-stopped
+    volumes:
+      - $PWD:/usr/share/nginx/html
+    ports:
+      - "1235:80"
