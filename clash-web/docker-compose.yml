@@ -4,3 +4,4 @@ services:
     container_name: yacd
     ports:
       - 1234:80
+    restart: unless-stopped
